@@ -1,0 +1,75 @@
+{
+  "mode_switches": [
+    {
+      "trigger": ["展厅模式|展厅", "静音模式|静音", "演示模式|演示"],
+      "mode": "exhibition",
+      "reply": "已切换到展厅模式"
+    },
+    {
+      "trigger": ["聊天模式|聊天", "对话模式|对话"],
+      "mode": "chat",
+      "reply": "已切换到聊天模式，有什么想聊的？"
+    },
+    {
+      "trigger": ["动作模式|动作", "交互模式|交互"],
+      "mode": "action",
+      "reply": "已切换到动作模式，身体已复位，随时可以互动！"
+    }
+  ],
+  "commands": [
+    {
+      "trigger": ["你好你好|你好", "哈喽", "早上好|早"],
+      "reply": "各位好，欢迎来到云蝶科技。",
+      "action": "wave"
+    },
+    {
+      "trigger": ["欢迎", "来啦|来了"],
+      "reply": "欢迎光临！",
+      "action": "welcome"
+    },
+    {
+      "trigger": ["比心", "爱心|爱你"],
+      "reply": "嘿嘿，爱你呦～",
+      "action": "heart"
+    },
+    {
+      "trigger": ["你是谁|你是"],
+      "reply": "我是云蝶机器人小蝶，很高兴为您服务。",
+      "action": "wave"
+    },
+    {
+      "trigger": ["再见", "拜拜", "bye"],
+      "reply": "再见啦，期待下次见面。",
+      "action": "right_wave"
+    },
+    {
+      "trigger": ["跳个舞|跳舞", "动一动|动一下", "站立|站起来"],
+      "reply": "好呀，给你表演一个。",
+      "action": "standup_pos"
+    },
+    {
+      "trigger": ["重新复位|复位", "回到原点|回到原位", "归零|归位"],
+      "reply": "好的，我重新复位一下。",
+      "action": "reset"
+    },
+    {
+      "trigger": ["放松", "停下"],
+      "reply": "好的，我现在会放松。",
+      "action": "home"
+    },
+    {
+      "trigger": ["握手"],
+      "reply": "好的，握个手吧。",
+      "action": "shake_hand"
+    }
+  ],
+  "keyword": {
+    "enabled": true,
+    "topK": 5,
+    "merge_strategy": "union",
+    "stopwords_path": "configs/jieba_stopwords.txt",
+    "user_dict_path": "configs/jieba_dict.txt",
+    "auto_dict_from_commands": true
+  },
+  "short_cmd_threshold": 10
+}

@@ -1,0 +1,32 @@
+# S2 机器人关节限位配置
+# 所有动作（PKL 回放 / 姿势 / 平滑插值 / 颈部跟踪）均受此限位约束。
+# 超出限位的值将在 clamp_joints() 中被裁剪。
+
+# ── 颈部 ──
+Joint_Neck_Yaw:   [-60, 60]     # 头部左右旋转（硬件限位）
+Joint_Neck_Pitch: [-45, 30]     # 头部俯仰（硬件限位）
+Joint_Neck_Roll:  [-20, 20]     # 头部侧倾（硬件限位）
+
+# ── 左臂 ──
+Joint_Left_Shoulder_Inner: [-168, 168]
+Joint_Left_Shoulder_Outer: [-180, 18]
+Joint_Left_UpperArm:       [-167, 167]
+Joint_Left_Elbow:          [0, 150]
+Joint_Left_Forearm:        [-169, 169]
+Joint_Left_Wrist_Upper:    [-80, 80]
+Joint_Left_Wrist_Lower:    [-60, 60]
+
+# ── 右臂 ──
+Joint_Right_Shoulder_Inner: [-168, 168]
+Joint_Right_Shoulder_Outer: [-18, 180]
+Joint_Right_UpperArm:       [-167, 167]
+Joint_Right_Elbow:          [-150, 0]
+Joint_Right_Forearm:        [-169, 169]
+Joint_Right_Wrist_Upper:    [-80, 80]
+Joint_Right_Wrist_Lower:    [-60, 60]
+
+# ── 腰腿 ──
+Joint_Waist_Yaw:   [-180, 180]
+Joint_Waist_Pitch: [-80, 149]
+Joint_Knee:        [-155, 155]
+Joint_Ankle:       [-85, 85]

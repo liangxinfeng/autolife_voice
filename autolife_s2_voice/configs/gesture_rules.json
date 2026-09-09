@@ -1,0 +1,198 @@
+{
+  "description": "手势识别规则配置 — 基于 MediaPipe 21 关键点的几何规则判定",
+  "version": "2.1",
+  "finger_definitions": {
+    "thumb":  {"pip_idx": 2,  "dip_idx": 3,  "tip_idx": 4,  "mcp_idx": 1},
+    "index":  {"pip_idx": 6,  "dip_idx": 7,  "tip_idx": 8,  "mcp_idx": 5},
+    "middle": {"pip_idx": 10, "dip_idx": 11, "tip_idx": 12, "mcp_idx": 9},
+    "ring":   {"pip_idx": 14, "dip_idx": 15, "tip_idx": 16, "mcp_idx": 13},
+    "pinky":  {"pip_idx": 18, "dip_idx": 19, "tip_idx": 20, "mcp_idx": 17}
+  },
+  "landmark_indices": {
+    "wrist": 0,
+    "middle_mcp": 9
+  },
+  "default_thresholds": {
+    "touch_distance_ratio": 0.30,
+    "finger_extend_ratio": 0.55,
+    "finger_bend_ratio": 0.35,
+    "pinky_extend_ratio": 0.45,
+    "thumb_extend_ratio": 0.45
+  },
+  "gestures": [
+    {
+      "gesture_id": "OK",
+      "name_cn": "OK",
+      "priority": 105,
+      "response": "好的，没问题",
+      "description": "拇指食指成圆环，其余三指伸展",
+      "conditions": {
+        "fingers": {
+          "thumb": "any",
+          "index": "any",
+          "middle": "extended",
+          "ring": "extended",
+          "pinky": "extended"
+        },
+        "contacts": [["thumb", "index"]]
+      }
+    },
+    {
+      "gesture_id": "Open_Palm",
+      "name_cn": "张开手掌",
+      "priority": 100,
+      "response": "你好你好",
+      "description": "五指全部伸展",
+      "conditions": {
+        "fingers": {
+          "thumb": "extended",
+          "index": "extended",
+          "middle": "extended",
+          "ring": "extended",
+          "pinky": "extended"
+        }
+      }
+    },
+    {
+      "gesture_id": "Closed_Fist",
+      "name_cn": "握拳",
+      "priority": 100,
+      "response": null,
+      "description": "五指全部弯曲",
+      "conditions": {
+        "fingers": {
+          "thumb": "bent",
+          "index": "bent",
+          "middle": "bent",
+          "ring": "bent",
+          "pinky": "bent"
+        }
+      }
+    },
+    {
+      "gesture_id": "Victory",
+      "name_cn": "剪刀手",
+      "priority": 90,
+      "response": "给你比个耶",
+      "description": "食指和中指伸展成V字形，拇指内扣",
+      "conditions": {
+        "fingers": {
+          "thumb": "bent",
+          "index": "extended",
+          "middle": "extended",
+          "ring": "bent",
+          "pinky": "bent"
+        },
+        "geometry": {
+          "index_direction": "up"
+        }
+      }
+    },
+    {
+      "gesture_id": "ILoveYou",
+      "name_cn": "摇滚",
+      "priority": 90,
+      "response": "你是在比爱你的手势吗？我也爱你哟",
+      "description": "拇指、食指、小指伸展",
+      "conditions": {
+        "fingers": {
+          "thumb": "extended",
+          "index": "extended",
+          "middle": "bent",
+          "ring": "bent",
+          "pinky": "extended"
+        }
+      }
+    },
+    {
+      "gesture_id": "Thumb_Down",
+      "name_cn": "拇指向下",
+      "priority": 80,
+      "response": null,
+      "description": "拇指向下，其他弯曲",
+      "conditions": {
+        "fingers": {
+          "thumb": "extended",
+          "index": "bent",
+          "middle": "bent",
+          "ring": "bent",
+          "pinky": "bent"
+        },
+        "geometry": {
+          "thumb_direction": "down"
+        }
+      }
+    },
+    {
+      "gesture_id": "Heart",
+      "name_cn": "比心",
+      "priority": 75,
+      "response": "嘿嘿，收到你的爱心啦",
+      "description": "拇指食指指尖接触，其余弯曲",
+      "conditions": {
+        "fingers": {
+          "thumb": "any",
+          "index": "any",
+          "middle": "bent",
+          "ring": "bent",
+          "pinky": "bent"
+        },
+        "contacts": [["thumb", "index"]]
+      }
+    },
+    {
+      "gesture_id": "Thumb_Up",
+      "name_cn": "竖大拇指",
+      "priority": 70,
+      "response": "你真棒",
+      "description": "拇指向上伸展，其他弯曲",
+      "conditions": {
+        "fingers": {
+          "thumb": "extended",
+          "index": "bent",
+          "middle": "bent",
+          "ring": "bent",
+          "pinky": "bent"
+        },
+        "geometry": {
+          "thumb_direction": "up"
+        }
+      }
+    },
+    {
+      "gesture_id": "Call_Me",
+      "name_cn": "打电话",
+      "priority": 60,
+      "response": "要给你打电话吗？",
+      "description": "拇指和小指伸展",
+      "conditions": {
+        "fingers": {
+          "thumb": "extended",
+          "index": "bent",
+          "middle": "bent",
+          "ring": "bent",
+          "pinky": "extended"
+        }
+      }
+    },
+    {
+      "gesture_id": "Pointing_Up",
+      "name_cn": "食指指",
+      "priority": 40,
+      "response": null,
+      "description": "食指伸展向上，其他弯曲",
+      "conditions": {
+        "fingers": {
+          "thumb": "bent",
+          "index": "extended",
+          "middle": "bent",
+          "ring": "bent",
+          "pinky": "bent"
+        },
+        "geometry": {
+          "index_direction": "up"
+        }
+      }
+    }
+  ]
+}

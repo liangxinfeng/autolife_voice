@@ -1,0 +1,86 @@
+{
+  "description": "手势 → TTS 回复映射（S2 机器人版）— 含 MediaPipe 预置 7 种 + 几何规则扩展 8 种",
+  "model": "~/models/mediapipe/gesture_recognizer.task",
+  "gestures": {
+    "None": {
+      "name_cn": "无手势",
+      "response": null,
+      "description": "未识别到特定手势"
+    },
+    "Open_Palm": {
+      "name_cn": "张开手掌",
+      "response": "你好你好",
+      "description": "五指张开，掌心朝向镜头"
+    },
+    "Closed_Fist": {
+      "name_cn": "握拳",
+      "response": null,
+      "description": "五指握紧成拳"
+    },
+    "Pointing_Up": {
+      "name_cn": "食指指",
+      "response": null,
+      "description": "食指向上伸出，其余手指握拳"
+    },
+    "Thumb_Up": {
+      "name_cn": "竖大拇指",
+      "response": "你真棒",
+      "description": "大拇指竖起，其余手指握拳"
+    },
+    "Thumb_Down": {
+      "name_cn": "拇指向下",
+      "response": null,
+      "description": "大拇指向下，其余手指握拳"
+    },
+    "Victory": {
+      "name_cn": "剪刀手",
+      "response": "给你比个耶",
+      "description": "食指和中指伸出成V字形"
+    },
+    "ILoveYou": {
+      "name_cn": "摇滚",
+      "response": "你是在比爱你的手势吗？我也爱你哟",
+      "description": "拇指、食指、小指伸出（摇滚/ILY手势）"
+    },
+    "OK": {
+      "name_cn": "OK",
+      "response": "好的，没问题",
+      "description": "拇指食指成圆环，其余三指伸展"
+    },
+    "Heart": {
+      "name_cn": "比心",
+      "response": "嘿嘿，收到你的爱心啦",
+      "description": "拇指食指指尖接触形成心形"
+    },
+    "1": {
+      "name_cn": "一",
+      "response": "我看到了一",
+      "description": "仅食指伸出"
+    },
+    "2": {
+      "name_cn": "二",
+      "response": "我看到了二",
+      "description": "食指和中指伸出"
+    },
+    "3": {
+      "name_cn": "三",
+      "response": "我看到了三",
+      "description": "食指、中指、无名指伸出"
+    },
+    "4": {
+      "name_cn": "四",
+      "response": "我看到了四",
+      "description": "除拇指外四指伸出"
+    },
+    "5": {
+      "name_cn": "五",
+      "response": "我看到了五",
+      "description": "五指全部伸出"
+    },
+    "Call_Me": {
+      "name_cn": "打电话",
+      "response": "要给你打电话吗？",
+      "description": "拇指和小指伸出（打电话手势）"
+    }
+  }
+}
