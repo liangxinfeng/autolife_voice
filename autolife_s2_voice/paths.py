@@ -9,7 +9,7 @@ from pathlib import Path
 
 PACKAGE_ROOT = Path(__file__).resolve().parent
 VOID_COG_ROOT = Path(
-    os.environ.get('AUTOLIFE_VOID_COG_ROOT', '/home/ubuntu/code/void-cog')
+    os.environ.get('AUTOLIFE_VOID_COG_ROOT', '/home/ubuntu/ros2_ws/external/void-cog')
 ).expanduser().resolve()
 STATE_ROOT = Path(
     os.environ.get(

@@ -65,9 +65,9 @@ def generate_launch_description():
         DeclareLaunchArgument('ros_domain_id', default_value='0'),
         DeclareLaunchArgument(
             'robot_env_python',
-            default_value='/home/ubuntu/miniconda3/envs/robot_env/bin/python'),
+            default_value='/home/ubuntu/ros2_ws/venvs/openarmx_v4_placo/bin/python'),
         DeclareLaunchArgument(
-            'void_cog_root', default_value='/home/ubuntu/code/void-cog'),
+            'void_cog_root', default_value='/home/ubuntu/ros2_ws/external/void-cog'),
         DeclareLaunchArgument(
             'state_dir', default_value='/home/ubuntu/.ros/autolife_s2_voice'),
         DeclareLaunchArgument('start_voice', default_value='true'),

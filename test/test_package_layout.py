@@ -25,7 +25,7 @@ def test_required_voice_assets_are_packaged():
 
 def test_launch_has_safe_defaults():
     launch = (ROOT / 'launch' / 'voice.launch.py').read_text(encoding='utf-8')
-    assert "DeclareLaunchArgument('robot_id', default_value='307')" in launch
+    assert "DeclareLaunchArgument('robot_id', default_value='300')" in launch
     assert "'enable_track', default_value='false'" in launch
     assert "'start_web', default_value='false'" in launch
 

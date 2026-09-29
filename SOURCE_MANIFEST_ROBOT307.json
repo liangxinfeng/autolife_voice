@@ -1,0 +1,385 @@
+{
+  "robot": "307",
+  "source_package": "autolife_s2_voice",
+  "snapshot_date": "2026-09-29",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57a0867a14dd254d2a11b045602d663da458ee0c",
+      "size": 114
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "631b6e2ec031cfa39d5c8ceff7bf76c4640d201d",
+      "size": 310
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b98a6f48228075eea44435558baf527da05935f1",
+      "size": 1479
+    },
+    {
+      "path": "autolife_s2_voice/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa2aaff6d08839db454b92b7a4ec8e69f731e28e",
+      "size": 79
+    },
+    {
+      "path": "autolife_s2_voice/asset/heart.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d08f83f2069ba8e940024f52c2d1977eb8a33456",
+      "size": 212622
+    },
+    {
+      "path": "autolife_s2_voice/asset/record_pkl_actions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59fbd59507b65f9c29774708c74d086cf596ab21",
+      "size": 4162
+    },
+    {
+      "path": "autolife_s2_voice/asset/shake_hand.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b1d5021d0c0d71332c516edbbff8e105b266f20",
+      "size": 4793179
+    },
+    {
+      "path": "autolife_s2_voice/asset/shake_hand_example.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b1d5021d0c0d71332c516edbbff8e105b266f20",
+      "size": 4793179
+    },
+    {
+      "path": "autolife_s2_voice/asset/test.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a24547c41068e4f01d2ea5d603ecc49e71558158",
+      "size": 8785330
+    },
+    {
+      "path": "autolife_s2_voice/asset/test_pkl_actions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f1dbfc831ec5ecaba138557a441ed19127b04c1",
+      "size": 11846
+    },
+    {
+      "path": "autolife_s2_voice/asset/welcome.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1a531915188a5937a00ebb4cc3ef3908c20ba11",
+      "size": 2301093
+    },
+    {
+      "path": "autolife_s2_voice/asset/打招呼.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc77ddbcbb46845fadee0f3f8c8daf05e6232257",
+      "size": 1071387
+    },
+    {
+      "path": "autolife_s2_voice/asset/爱心.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f09d1e8b7390f188b5f32149cd83ef85e140c19",
+      "size": 396075
+    },
+    {
+      "path": "autolife_s2_voice/asset/鞠躬.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b051c24ecf05bf3db30acc134cb18085e0554e0",
+      "size": 1160362
+    },
+    {
+      "path": "autolife_s2_voice/configs/gesture_rules.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fc1bc7b7b43ccfdcfa68b4e4e8b4faf1074fc55",
+      "size": 5082
+    },
+    {
+      "path": "autolife_s2_voice/configs/gestures.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d5c94bca587c4642651ac77929c08a4ed1b5ae0",
+      "size": 2483
+    },
+    {
+      "path": "autolife_s2_voice/configs/jieba_dict.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3ac0573b1e328c572197ef3ea61215a7f58f0ac",
+      "size": 642
+    },
+    {
+      "path": "autolife_s2_voice/configs/jieba_stopwords.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e77c747b5a7852b8f10a6ecbb5a116b48ff82a7f",
+      "size": 1032
+    },
+    {
+      "path": "autolife_s2_voice/configs/joint_limits.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ff90135d43cdd5ec9c7f88b727be725a3c245da",
+      "size": 1141
+    },
+    {
+      "path": "autolife_s2_voice/configs/keyword_mapping.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a0df47c419bce7436364d5bf5ac1eb01946ef82",
+      "size": 500
+    },
+    {
+      "path": "autolife_s2_voice/configs/voice_interaction.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8e59bd171c4f11dbc7e1dafb7e6df9d644ebd87",
+      "size": 2106
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/hello.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3720525a81bb215d619edda6675c74eb73c7f530",
+      "size": 3302090
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/idle1.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70fe7ac73c3c8218900e862c677330ce960dc5e4",
+      "size": 6223770
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/idle2.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c8b3b8d0529816027fd19085f1fa5d584c03dac",
+      "size": 7354309
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/idle3.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6171b2eb1593e05bd3d27a4732a0f838a96c3b69",
+      "size": 6687372
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/left_wave.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37d2080d081074a021f6fde763d1e7091ae6e8a2",
+      "size": 2574274
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/package_pos.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "001634bf2ca58054655ad6c69c1124551ec26250",
+      "size": 86214
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/right_wave.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83cc1db865b51062bc704699f41cd70abfacfd89",
+      "size": 2427383
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/standup_pos.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a96a8e7bd16396c7ec705ab315ad341c3fa42b49",
+      "size": 74989
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/test.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a24547c41068e4f01d2ea5d603ecc49e71558158",
+      "size": 8785330
+    },
+    {
+      "path": "autolife_s2_voice/example/pkl/wave.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e44b42b53e96d20caed6b87f30d176529b7377cd",
+      "size": 2087579
+    },
+    {
+      "path": "autolife_s2_voice/paths.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f37d7317ea7be77f23a3d2eb8d4f596177c3183",
+      "size": 744
+    },
+    {
+      "path": "autolife_s2_voice/run/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "295de2f74b18fb1bbe7f8f61109f0db1891471c3",
+      "size": 60
+    },
+    {
+      "path": "autolife_s2_voice/run/act/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98e4ccb9e79defccc697764d152598f0033ce316",
+      "size": 202
+    },
+    {
+      "path": "autolife_s2_voice/run/act/act_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa9ae4ebfd3569a39d34560e3f44944ced35e023",
+      "size": 33185
+    },
+    {
+      "path": "autolife_s2_voice/run/asr/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f22e83966944295e5bc1d028cc2d500b7338e8f",
+      "size": 115
+    },
+    {
+      "path": "autolife_s2_voice/run/asr/asr_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89edafc21def80678d49b260c818bbc730de996e",
+      "size": 14566
+    },
+    {
+      "path": "autolife_s2_voice/run/asr/asr_factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e680a661e3e96a442201d4600f3470793b276cc6",
+      "size": 14613
+    },
+    {
+      "path": "autolife_s2_voice/run/robot_voice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12fe9e7fc2ef33286c1bebb5adad6ebb8fbe1207",
+      "size": 72536
+    },
+    {
+      "path": "autolife_s2_voice/run/track/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c6f9a91ba8214ae007e6e632c6e5458198f2f5",
+      "size": 1014
+    },
+    {
+      "path": "autolife_s2_voice/run/track/camera.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "179461619ea56be9f7cf69a3c2fac12f1691e286",
+      "size": 2576
+    },
+    {
+      "path": "autolife_s2_voice/run/track/detector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed160b8df9831f3235de6a5c3576e9c30f7bf70f",
+      "size": 20281
+    },
+    {
+      "path": "autolife_s2_voice/run/track/neck_tracker.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "512edc1332c6c6e39d2431b50b86fe3fbe3a9ddc",
+      "size": 8779
+    },
+    {
+      "path": "autolife_s2_voice/run/track/track_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d60b308047b4ac055adef036f4cb8517dedd150",
+      "size": 12632
+    },
+    {
+      "path": "autolife_s2_voice/run/tts/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6f9fcdccc22ae8adcffe0329444a55fe1be67f5",
+      "size": 152
+    },
+    {
+      "path": "autolife_s2_voice/run/tts/tts_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b42fe487f884c2953064e67b3ae693c0dbeca5d",
+      "size": 11476
+    },
+    {
+      "path": "autolife_s2_voice/run/tts/tts_factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bcd3142aefb593ab48c32a12ffbb153380d474c",
+      "size": 16678
+    },
+    {
+      "path": "autolife_s2_voice/run/web_voice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6885ffa3b5182c294fe54af1500e6b0b75c63fa6",
+      "size": 24300
+    },
+    {
+      "path": "launch/voice.launch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c75ca0284ed5c3a3c32d786cee9cdaf50395605",
+      "size": 4633
+    },
+    {
+      "path": "package.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd0ca7070cdf6cdc56cd4fdf872cdc9ddad94365",
+      "size": 674
+    },
+    {
+      "path": "resource/autolife_s2_voice",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1
+    },
+    {
+      "path": "setup.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d8e7be433ccc81ca4e9c296d84f842a7c9a6dd2",
+      "size": 103
+    },
+    {
+      "path": "setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b3d00489b89cea3733f34d11a903b3e70381e06",
+      "size": 1087
+    },
+    {
+      "path": "test/test_package_layout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc46f7ba0e052f1627e8a753c699a951ac329896",
+      "size": 2210
+    }
+  ]
+}
